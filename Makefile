@@ -24,3 +24,7 @@ focus:
 shell:
 	@echo "Connecting to raspberry pi"
 	@ssh $(RASPBERRY_PI_USERNAME)@$(RASPBERRY_PI_IP)
+
+.PHONY: download-model
+download-model:
+	@cd deployment && bash download_pretrained_model.sh

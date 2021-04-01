@@ -31,7 +31,6 @@ def main():
     try:
         allowed_labels = [
             'dog',
-            'person',
             'cat',
         ]
         c.set_allowed_labels(allowed_labels)

@@ -3,3 +3,4 @@ env
 *.pyc
 src/data
 *.weights
+*.jpg
