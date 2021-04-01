@@ -16,16 +16,21 @@ cd pet_detector
 make install
 ```
 
-The script will set up base, and python dependencies.
-
-Populate the config.py file with your required variables.
-
+Next, download the pretrained model.
 ```
-nano config.py
+make download-model
 ```
+
+## Running
+Use this command to run the script:
+```
+make run
+```
+
+### Running on boot
 
 To configure the script to run automatically, add the following line to `/etc/rc.local` before the last line.
 
 ```bash
-source /home/pi/pet_detector/env/bin/activate && python /home/pi/pet_detector/src/app.py
+source /home/pi/pet_detector/env/bin/activate && cd  /home/pi/pet_detector/src && python app.py
 ```
