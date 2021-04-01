@@ -3,7 +3,7 @@
 
 echo "Installing base dependencies"
 sudo apt-get update
-sudo apt-get install -y ffmpeg libsm6 libxext6 python-pip
+sudo apt-get install -y ffmpeg libsm6 libxext6 python-pip python3-pip
 
 cd ../
 
