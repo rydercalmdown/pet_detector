@@ -9,6 +9,6 @@ cd ../
 
 python -m pip install virtualenv
 
-virtualenv -p python3 env
+python -m virtualenv -p python3 env
 . env/bin/activate
 pip install -r src/requirements.txt
