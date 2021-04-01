@@ -11,4 +11,5 @@ python -m pip install virtualenv
 
 python -m virtualenv -p python3 env
 . env/bin/activate
+pip install --upgrade pip setuptools wheel
 pip install -r src/requirements.txt
